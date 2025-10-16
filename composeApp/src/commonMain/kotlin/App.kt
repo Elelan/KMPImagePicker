@@ -19,6 +19,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
+import kmpimagepicker.composeapp.generated.resources.Res
+import kmpimagepicker.composeapp.generated.resources.ic_person_circle
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -145,7 +147,7 @@ fun App() {
                     modifier = Modifier.size(100.dp).clip(CircleShape).clickable {
                         imageSourceOptionDialog = true
                     },
-                    painter = painterResource("ic_person_circle.xml"),
+                    painter = painterResource(Res.drawable.ic_person_circle),
                     contentDescription = "Profile",
                 )
             }
